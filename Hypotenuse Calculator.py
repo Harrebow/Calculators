@@ -1,7 +1,20 @@
-def introduction(first_name, last_name, country):
-    if country == "Hungary":
-        print("Hello, my name is", last_name, first_name)
-    else:
-        print("Hello, my name is", first_name, last_name)
+def message():
+    print("Enter a value ")
 
-introduction(input("please enter your first name: "), input("please enter your last name: "), input("please enter your country: "))
+def isqrt(n):
+    x = n
+    y = (x + 1) / 2
+    while y < x:
+        x = y
+        y = (x + n / x) / 2
+    x = '{0:.3g}'.format(x)
+    return x
+
+message()
+a = int(input())
+message()
+b = int(input())
+
+c = b**2+a**2
+
+print("The Hypotenues is", isqrt(c))
